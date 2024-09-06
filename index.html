@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f4f4; /* Light background */
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333; /* Dark text for readability */
+    }
+
+    .login-container {
+      max-width: 400px;
+      width: calc(100% - 2cm);
+      background-color: white;
+      padding: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      font-weight: normal; /* Regular font weight for header */
+      margin-bottom: 10px;
+    }
+
+    .profile-image {
+      width: calc(100% - 2cm);
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .google-btn {
+      width: calc(100% - 2cm);
+      margin-left: 1cm;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none; 
+      display: block; 
+      text-align: center; 
+    }
+
+    .google-btn:hover {
+      background-color: #145ab6;
+    }
+
+    .account-text {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .info-text {
+      font-size: 16px; /* Larger font size for emphasis */
+      margin-bottom: 5px;
+    }
+
+    .separator {
+      width: 80%; /* Width of the line for separation */
+      height: 1px;
+      background-color: #ccc; /* Light grey line */
+      margin: 20px auto; /* Centering the line */
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Welcome Back!</h2>
+    <img src="clg_logo.png" alt="Profile Image" class="profile-image">
+    
+    <!-- Additional Info Text -->
+    <div class="info-text">NPTEL Course Exemption</div>
+    <div class="separator"></div> <!-- Visual Separator Line -->
+    
+    <a href="intro.html" class="google-btn">Google Sign In</a>
+    <p class="account-text">Sign in with your BIT account</p>
+  </div>
+
+  <script>
+    document.getElementById('googleSignIn').addEventListener('click', function() {
+      alert('Google Sign-In clicked! Redirecting to Google Authentication...');
+    });
+  </script>
+</body>
+</html>
